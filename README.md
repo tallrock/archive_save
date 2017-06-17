@@ -29,8 +29,8 @@ to saving the "archive" copies to the subdirectory "./archive_saved_files".
 
 ## THE ARCHIVE FILENAME
 
-I save the archive file with two changes in order to guarantee uniqueness:
-(1) I slugify the filename (no spaces,slashes,colons)
+I save the archive file with two changes in order to guarantee uniqueness:  
+(1) I slugify the filename (no spaces,slashes,colons)  
 (2) I prefix the filename with a time-stamped-to-the-millisecond code.
 
 So a file like 'c:\goals\march list.txt' becomes 'j3jryh4g.c.goals.march.list.txt'
@@ -41,15 +41,15 @@ Put this file in Sublime's Packages/User directory:
 
 filename: Sublime Text 3/Packages/User/archive_save.sublime-settings
 
-> {
->     "archive_directory": "C:\\archive_saved_files\\"
+> {  
+>     "archive_directory": "C:\\archive_saved_files\\"  
 > }
 
 ## THE KEY BINDINGS FILE
 
-> [
->     { "keys": ["alt+ctrl+s"], "command": "archive_save"},
->     { "keys": ["ctrl+s"], "command": "save" }
+> [  
+>     { "keys": ["alt+ctrl+s"], "command": "archive_save" },  
+>     { "keys": ["ctrl+s"], "command": "save" }  
 > ]
 
 (I have entries for the regular save as well because I'm a belts-and-suspenders guy).
